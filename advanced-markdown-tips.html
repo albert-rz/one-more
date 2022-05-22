@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0">
+  <meta charset="iso-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <title>Advanced Markdown tips | FiveAM.dev</title>
+  <meta name="generator" content="Jekyll v4.2.2">
+  <meta property="og:title" content="Advanced Markdown tips">
+  <meta name="author" content="Albert Ruiz">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content=
+  "If youâ&#8364;&#8482;ve gotten pretty comfortable with Markdown in Jekyll, then you may enjoy some more advanced tips about the types of things you can do with it!">
+  <meta property="og:description" content=
+  "If youâ&#8364;&#8482;ve gotten pretty comfortable with Markdown in Jekyll, then you may enjoy some more advanced tips about the types of things you can do with it!">
+  <meta property="og:site_name" content="FiveAM.dev">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2018-02-07T00:00:00+00:00">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="Advanced Markdown tips">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Albert Ruiz"},"dateModified":"2018-02-07T00:00:00+00:00","datePublished":"2018-02-07T00:00:00+00:00","description":"If youâ¬"ve gotten pretty comfortable with Markdown in Jekyll, then you may enjoy some more advanced tips about the types of things you can do with it!","headline":"Advanced Markdown tips","mainEntityOfPage":{"@type":"WebPage","@id":"/https://albert-rz.github.io/fiveam.dev/advanced-markdown-tips"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/https://albert-rz.github.io/fiveam.dev/assets/images/logo.png"},"name":"Albert Ruiz"},"url":"/https://albert-rz.github.io/fiveam.dev/advanced-markdown-tips"}
+  </script><!-- End Jekyll SEO tag -->
+  <!-- Site Favicon -->
+  <link rel="shortcut icon" href=
+  "/https://albert-rz.github.io/fiveam.dev/assets/images/favicon.ico" type="image/png">
+  <!-- Font Embed Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet"><!-- CSS Styles -->
+  <link href="https://albert-rz.github.io/fiveam.dev//assets/css/style.css" rel="stylesheet">
+</head>
+<body class="layout-post">
+  <div id="page" class="site">
+    <header id="masthead" class="site-header outer">
+      <div class="site-header-inside">
+        <div class="site-branding">
+          <p class="site-logo"><a href="https://albert-rz.github.io/fiveam.dev//" rel=
+          "home"><img src="https://albert-rz.github.io/fiveam.dev//assets/images/logo.png" alt=
+          "FiveAM.dev"></a></p>
+          <h1 class="site-title screen-reader-text"><a href=
+          "https://albert-rz.github.io/fiveam.dev/" rel="home"></a></h1>
+        </div><!-- .site-branding -->
+        <nav id="main-navigation" class="site-navigation" aria-label="Primary Navigation">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="/about/">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="/contact/">Contact Me</a>
+            </li>
+          </ul><button id="sidebar-show" class="sidebar-toggle btn-icon"><span class=
+          "screen-reader-text">Open Sidebar</span><span class="icon-more" aria-hidden=
+          "true"></span></button>
+        </nav><!-- .site-navigation -->
+      </div><!-- .site-header-inside -->
+    </header><!-- .site-header -->
+    <div id="content" class="site-content fadeInDown delay_075s">
+      <main id="main" class="site-main outer">
+        <article class="post-full inner">
+          <header class="post-header">
+            <div class="post-meta">
+              <time class="post-date" datetime="2018-02-07">February 7, 2018</time>
+            </div><!-- .post-meta -->
+            <h1 class="posttitle">Advanced Markdown tips</h1>
+          </header><!-- .post-header -->
+          <div class="post-thumbnail"><img class="featured-image img-fluid" src=
+          "https://albert-rz.github.io/fiveam.dev/assets/images/posts/2018/7.jpg" alt=
+          "Advanced Markdown tips"></div>
+          <div class="post-content">
+            <p>If youâ&#8364;&#8482;ve gotten pretty comfortable with Markdown in Jekyll, then you
+            may enjoy some more advanced tips about the types of things you can do with it!</p>
+            <p>As with the last post about the editor, youâ&#8364;&#8482;ll want to be actually
+            editing this post as you read it so that you can see all the Markdown code
+            weâ&#8364;&#8482;re using.</p>
+            <h2 id="special-formatting">Special formatting</h2>
+            <p>As well as bold and italics, you can also use some other special formatting in
+            Markdown when the need arises, for example:</p>
+            <ul>
+              <li>
+                <del>strike through</del>
+              </li>
+              <li>==highlight==</li>
+              <li>*escaped characters*</li>
+            </ul>
+            <h2 id="writing-code-blocks">Writing code blocks</h2>
+            <p>There are two types of code elements which can be inserted in Markdown, the first is
+            inline, and the other is block. Inline code is formatted by wrapping any word or words
+            in back-ticks, <code class="language-plaintext highlighter-rouge">like this</code>.
+            Larger snippets of code can be displayed across multiple lines using triple back
+            ticks:</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>.my-link {
+    text-decoration: underline;
+}
+</code></pre>
+              </div>
+            </div>
+            <p>If you want to get really fancy, you can even add syntax highlighting using <a href=
+            "http://prismjs.com/">Prism.js</a>.</p>
+            <h2 id="reference-lists">Reference lists</h2>
+            <p><strong>The quick brown <a href="https://en.wikipedia.org/wiki/Fox" title=
+            "Wikipedia: Fox">fox</a>, jumped over the lazy <a href=
+            "https://en.wikipedia.org/wiki/Dog" title="Wikipedia: Dog">dog</a>.</strong></p>
+            <p>Another way to insert links in markdown is using reference lists. You might want to
+            use this style of linking to cite reference material in a Wikipedia-style. All of the
+            links are listed at the end of the document, so you can maintain full separation
+            between content and its source or reference.</p>
+            <h2 id="creating-footnotes">Creating footnotes</h2>
+            <p>The quick brown fox<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class=
+            "footnote" rel="footnote">1</a></sup> jumped over the lazy dog<sup id="fnref:2" role=
+            "doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+            <p>Footnotes are a great way to add additional contextual details when appropriate.
+            Ghost will automatically add footnote content to the very end of your post.</p>
+            <h2 id="full-html">Full HTML</h2>
+            <p>Perhaps the best part of Markdown is that youâ&#8364;&#8482;re never limited to just
+            Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML
+            usually does. No limits! Hereâ&#8364;&#8482;s a standard YouTube embed code as an
+            example:</p><iframe width="560" height="315" src=
+            "https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0"
+            allowfullscreen></iframe>
+            <div class="footnotes" role="doc-endnotes">
+              <ol>
+                <li id="fn:1" role="doc-endnote">
+                  <p>Foxes are redÂ <a href="#fnref:1" class="reversefootnote" role=
+                  "doc-backlink">&#8617;</a></p>
+                </li>
+                <li id="fn:2" role="doc-endnote">
+                  <p>Dogs are usually not redÂ <a href="#fnref:2" class="reversefootnote" role=
+                  "doc-backlink">&#8617;</a></p>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <footer class="post-footer">
+            <p class="post-tags"><a href=
+            'https://albert-rz.github.io/fiveam.dev/tag/jekyll/'>Jekyll</a> <a href=
+            'https://albert-rz.github.io/fiveam.dev/tag/tips/'>Tips</a></p>
+            <div class="post-share">
+              <span class="post-share-title">Share:</span> <a target="_blank" href=
+              "https://twitter.com/share?text=Advanced+Markdown+tips&amp;url=advanced-markdown-tips">
+              Twitter</a> <a target="_blank" href=
+              "https://www.facebook.com/sharer/sharer.php?u=advanced-markdown-tips">Facebook</a>
+            </div><!-- .share-post -->
+          </footer>
+          <div class="author-box">
+            <div class="author-avatar"><img src=
+            "https://albert-rz.github.io/fiveam.dev//assets/images/authorimage.jpg" alt=
+            "Albert Ruiz&#39;s Picture" class="avatar"></div>
+            <div class="author-details">
+              <h2 class="author-title">About Albert Ruiz</h2>
+              <p class="author-description">Daniel is a designer, photographer, speaker, author of
+              a couple of books about typography and the founder of photo magazine Curious.</p>
+            </div>
+          </div>
+          <section id="comments-area" class="comments-area">
+            <h2 class="comments-title">Comments</h2>
+            <div class="comments-inside">
+              <div id="disqus_thread"></div>
+            </div><!-- .comments-inside -->
+            <div id="comments-overlay" class="comments-overlay">
+              <a href="#" id="comments-show" class="comments-show">Show comments</a>
+            </div><!-- .comments-overlay -->
+            <script type="text/javascript">
+            var disqus_shortname = 'justgoodthemes';
+            var disqus_developer = 0;
+            (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script> <noscript>Please enable JavaScript to view the <a href=
+            "http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href=
+            "http://disqus.com" class="dsq-brlink">comments powered by <span class=
+            "logo-disqus">Disqus</span></a>
+          </section>
+        </article>
+        <section class="newsletter-box inner-wide">
+          <div class="inner">
+            <h2 class="newsletter-box-title">Subscribe to FiveAM.dev newsletter</h2>
+            <p>Get the latest and greatest from FiveAM.dev delivered straight to your inbox every
+            week.</p><!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action=
+              "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+              class="validate gh-subscribe-form" target="_blank" novalidate="">
+                <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+                <input type="email" value="" name="EMAIL" class="required email subscribe-email"
+                id="mce-EMAIL" placeholder="Your email address"> <input type="submit" value=
+                "Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </form>
+            </div><!--End mc_embed_signup-->
+          </div><!-- .inner -->
+        </section><!-- .widget -->
+        <section class="read-next inner">
+          <h2 class="read-next-title">Read Next</h2>
+          <article class="post">
+            <header class="post-header">
+              <div class="post-meta">
+                <time class="published" datetime="January 12, 2018">January 12, 2018</time>
+              </div>
+              <h3 class="post-title"><a href=
+              "https://albert-rz.github.io/fiveam.dev//a-week-with-the-apple-watch">A Week With the
+              Apple Watch</a></h3>
+              <p class="post-tags"><a href=
+              'https://albert-rz.github.io/fiveam.dev//tag/tips/'>Tips</a></p>
+            </header><a href="https://albert-rz.github.io/fiveam.dev//a-week-with-the-apple-watch"
+            class="post-thumbnail"><img src="assets/images/posts/2018/12_thumbnail.jpg" alt=
+            "A Week With the Apple Watch"></a>
+          </article>
+          <article class="post">
+            <header class="post-header">
+              <div class="post-meta">
+                <time class="published" datetime="January 1, 2022">January 1, 2022</time>
+              </div>
+              <h3 class="post-title"><a href=
+              "https://albert-rz.github.io/fiveam.dev//test-jupytext-post">Bla bla This is just a
+              demo - 2022-05-22</a></h3>
+              <p class="post-tags"><a href=
+              'https://albert-rz.github.io/fiveam.dev//tag/python/'>Python</a></p>
+            </header><a href="https://albert-rz.github.io/fiveam.dev//test-jupytext-post" class=
+            "post-thumbnail"><img src="/assets/images/posts/2018/12_thumbnail.jpg" alt=
+            "Bla bla This is just a demo - 2022-05-22"></a>
+          </article>
+        </section><!-- .read-next -->
+      </main><!-- .site-main -->
+    </div><!-- .site-content -->
+    <footer id="colophon" class="site-footer outer">
+      <div class="site-footer-inside">
+        <p class="social-links"><a href="https://github.com/username" class=
+        "btn btn-icon btn-secondary" target="_blank" rel="noopener"><svg viewbox="0 0 24 24" xmlns=
+        "http://www.w3.org/2000/svg">
+        <title>GitHub icon</title>
+        <path d=
+        "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+        </svg> <span class="screen-reader-text">GitHub</span></a> <a href=
+        "https://www.linkedin.com/in/username" class="btn btn-icon btn-secondary" target="_blank"
+        rel="noopener"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>LinkedIn icon</title>
+        <path d=
+        "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+        </svg> <span class="screen-reader-text">Linkedin</span></a></p>
+        <p class="site-info"><a href="#">FiveAM.dev</a> © 2022 . Horace theme by <a target="_blank"
+        href="https://justgoodthemes.com/">JustGoodThemes</a>.<br>
+        Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.</p>
+        <p class="back-to-top"><a id="top-button" class="top-button" href="#page"><span class=
+        "icon-arrow-up" aria-hidden="true"></span> <span class="screen-reader-text">Back to
+        top</span></a></p>
+      </div><!-- .site-footer-inside -->
+    </footer><!-- .site-footer -->
+  </div><!-- .site -->
+  <div id="site-overlay" class="site-overlay"></div>
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-scrollable">
+      <div class="sidebar-inside">
+        <button id="sidebar-hide" class="sidebar-toggle btn-icon"><span class=
+        "screen-reader-text">Close Sidebar</span><span aria-hidden="true" class=
+        "icon-close"></span></button>
+        <nav id="sidebar-navigation" class="widget site-navigation">
+          <h2 class="widget-title">Explore Site</h2>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="/about/">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="/contact/">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="widget widget-text">
+          <h2 class="widget-title">About FiveAM.dev</h2>
+          <p>Horace is a simple Jekyll theme for writers and bloggers. Explore it yourself.</p>
+        </section>
+        <section class="widget widget-recent-posts">
+          <h2 class="widget-title">Recent Articles</h2>
+          <ul>
+            <li>
+              <div class="post-header">
+                <div class="post-meta">
+                  <time class="published" datetime="??">January 1, 2022</time>
+                </div>
+                <div class="post-title">
+                  <a href="/https://albert-rz.github.io/fiveam.dev/test-jupytext-post">Bla bla This
+                  is just a demo - 2022-05-22</a>
+                </div>
+              </div><a class="post-thumbnail" href="/test-jupytext-post"><img src=
+              "/https://albert-rz.github.io/fiveam.dev/assets/images/posts/2018/12_thumbnail.jpg"
+              alt="Bla bla This is just a demo - 2022-05-22"></a>
+            </li>
+            <li>
+              <div class="post-header">
+                <div class="post-meta">
+                  <time class="published" datetime="??">February 7, 2018</time>
+                </div>
+                <div class="post-title">
+                  <a href="/https://albert-rz.github.io/fiveam.dev/advanced-markdown-tips">Advanced
+                  Markdown tips</a>
+                </div>
+              </div><a class="post-thumbnail" href="/advanced-markdown-tips"><img src=
+              "/https://albert-rz.github.io/fiveam.dev/assets/images/posts/2018/7_thumbnail.jpg"
+              alt="Advanced Markdown tips"></a>
+            </li>
+            <li>
+              <div class="post-header">
+                <div class="post-meta">
+                  <time class="published" datetime="??">January 12, 2018</time>
+                </div>
+                <div class="post-title">
+                  <a href="/https://albert-rz.github.io/fiveam.dev/a-week-with-the-apple-watch">A
+                  Week With the Apple Watch</a>
+                </div>
+              </div><a class="post-thumbnail" href="/a-week-with-the-apple-watch"><img src=
+              "/https://albert-rz.github.io/fiveam.dev/assets/images/posts/2018/12_thumbnail.jpg"
+              alt="A Week With the Apple Watch"></a>
+            </li>
+          </ul>
+        </section><!-- Create a sorted array of tags -->
+        <section class="widget widget-tagcloud">
+          <h2 class="widget-title">Tags</h2>
+          <div class="tagcloud">
+            <a href='tag/jekyll/'>Jekyll</a> <a href='tag/python/'>Python</a> <a href=
+            'tag/tips/'>Tips</a>
+          </div>
+        </section>
+        <section class="widget widget-newsletter">
+          <div class="inner">
+            <h2 class="widget-title">Subscribe to FiveAM.dev</h2>
+            <p>Get the latest and greatest from FiveAM.dev delivered straight to your inbox every
+            week.</p><!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action=
+              "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+              class="validate gh-subscribe-form" target="_blank" novalidate="">
+                <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+                <input type="email" value="" name="EMAIL" class="required email subscribe-email"
+                id="mce-EMAIL" placeholder="Your email address"> <input type="submit" value=
+                "Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </form>
+            </div>
+          </div>
+        </section>
+      </div><!-- .sidebar-inside -->
+    </div><!-- .sidebar-scrollable -->
+  </aside><!-- .sidebar -->
+  <!-- Javascript Assets -->
+  <script src="https://albert-rz.github.io/fiveam.dev//assets/js/jquery-3.4.1.min.js"></script> 
+  <script src="https://albert-rz.github.io/fiveam.dev//assets/js/plugins.js"></script> 
+  <script src="https://albert-rz.github.io/fiveam.dev//assets/js/custom.js"></script>
+</body>
+</html>
